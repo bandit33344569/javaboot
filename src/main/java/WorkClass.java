@@ -7,8 +7,9 @@ public class WorkClass {
     }
     public static void GetTime(){
         Date date = new Date();
-        System.out.println(java.time.ZonedDateTime.now());
-        System.out.println( date);
+        String[] strArray = date.toString().split(" ");
+         String[] d =  strArray[3].split(":");
+        System.out.println(d[0]+ ":"+d[1]);
     }
     public static void GetHelp(){
         SendString("Приветсвую вас! Данный бот умеет \n" +
