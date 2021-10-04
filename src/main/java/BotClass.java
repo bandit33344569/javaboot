@@ -5,8 +5,8 @@ public class BotClass {
 
     public static void main(String[] args){
         while (true){
-           WorkClass.SendString("Ведите команду ");
-            WorkClass.Update();
+           ConsoleTransport.SendString("Ведите команду ");
+           ConsoleTransport.Update();
         }
     }
 }
